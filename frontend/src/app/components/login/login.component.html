@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+            <label><b>{{email}}</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" type="email" placeholder="Enter Email" name="usrname" required>
+            <label><b>{{password}}</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+            <input class="w3-check form-check-label" type="checkbox" checked="checked"> Remember me
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <span class="w3-left w3-padding w3-hide-small">Forgot <em><a href="#">password?</a></em></span>
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Cancel</button>
+</div>
